@@ -21,6 +21,17 @@
     self.view.backgroundColor=[UIColor whiteColor];
     
     
+    UIButton* button=[UIButton buttonWithType:UIButtonTypeCustom];
+    
+    button.frame=CGRectMake(0, 0, 30, 30);
+    [button setTitle:@"abc" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+    
+    
+    
 }
 
 
@@ -29,5 +40,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)buttonClicked:(UIButton *)button{
+    
+    
+    
+
+}
 
 @end
